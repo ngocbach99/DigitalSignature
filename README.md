@@ -1,6 +1,7 @@
-rm *.pem
 
-1. Tạo CA's private key và Chứng chỉ tự kí
+Trước khi bắt đầu ta cần tạo chứng chỉ số cho riêng mình.
+
+<h1> 1. Tạo CA's private key và Chứng chỉ tự kí </h1>
 openssl req -x509 -newkey rsa:4096 -days 365 -nodes -keyout ca-key.pem -out ca-cert.pem -subj "/C=VN/ST=Hanoi/L=Hanoi/O=PTIT/OU=IT/CN=*.myca.com/emailAddress=ngocbachnguyen99@gmail.com"
 
 echo "CA's self-signed certificate"
@@ -15,7 +16,7 @@ openssl x509 -req -in server-req.pem -days 60 -CA ca-cert.pem -CAkey ca-key.pem 
 -> Kiểm tra chứng chỉ
 openssl x509 -in server-cert.pem -noout -text
 
- -> Xác thực chứng chỉ
+-> Xác thực chứng chỉ
 openssl verify -CAfile ca-cert.pem server-cert.pem
 
 ------------------------------------------------------------------------------
