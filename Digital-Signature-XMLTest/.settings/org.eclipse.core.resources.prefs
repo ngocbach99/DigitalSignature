@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+encoding//src/com/bach/digitalsignature/generator/XmlDigitalSignatureGenerator.java=UTF-8
+encoding//src/com/bach/digitalsignature/main/Main.java=UTF-8
+encoding//src/com/bach/digitalsignature/service/CryptoService.java=UTF-8
+encoding//src/com/bach/digitalsignature/verifier/XmlDigitalSignatureVerifier.java=UTF-8

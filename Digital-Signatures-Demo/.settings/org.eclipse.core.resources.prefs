@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+encoding//src/com/bach/consumer/VerifySignature.java=UTF-8
+encoding//src/com/bach/encrypt/DataEncryption.java=UTF-8
+encoding//src/com/bach/key/GenKeys.java=UTF-8
+encoding//src/com/bach/sender/Message.java=UTF-8

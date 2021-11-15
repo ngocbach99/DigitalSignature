@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+encoding//src/com/bach/docx/AddDigitalSignatureForWord.java=UTF-8
+encoding//src/com/bach/pdf/AddDigitalSignatureForPDF.java=UTF-8
+encoding//src/com/bach/pdf/VerifyDigitalSignatureForPDF.java=UTF-8

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SalaryDeposit>
+    <Organisation>
+        <Name>PTIT</Name>
+        <AccountNo>bach99</AccountNo>
+    </Organisation>
+    <Employees>
+        <Emp>
+            <Name>Nguyen Ngoc Bach</Name>
+            <AccountNo>bach99</AccountNo>
+            <Amount>1234</Amount>
+        </Emp>
+        <Emp>
+            <Name>Nguyen Ngoc Bach</Name>
+            <AccountNo>bach99</AccountNo>
+            <Amount>2334</Amount>
+        </Emp>
+        <Emp>
+            <Name>Nguyen Ngoc Bach</Name>
+            <AccountNo>bach99</AccountNo>
+            <Amount>3465</Amount>
+        </Emp>
+        <Emp>
+            <Name>Nguyen Ngoc Bach</Name>
+            <AccountNo>bach99</AccountNo>
+            <Amount>5789</Amount>
+        </Emp>
+        <Emp>
+            <Name>Nguyen Ngoc Bach</Name>
+            <AccountNo>bach99</AccountNo>
+            <Amount>1234</Amount>
+        </Emp>
+    </Employees>
+</SalaryDeposit>
