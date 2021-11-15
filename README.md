@@ -1,6 +1,8 @@
 
 <h3> Trước khi bắt đầu ta cần tạo chứng chỉ số cho riêng mình. </h3>
 
+**** Chứng chỉ được tạo bằng công cụ OpenSSL -  là một thư viện phần mềm cho các ứng dụng bảo mật truyền thông qua mạng máy tính ****
+
 <h4> 1. Tạo CA's private key và Chứng chỉ tự kí </h4>
       openssl req -x509 -newkey rsa:4096 -days 365 -nodes -keyout ca-key.pem -out ca-cert.pem -subj         "/C=VN/ST=Hanoi/L=Hanoi/O=PTIT/OU=IT/CN=*.myca.com/emailAddress=ngocbachnguyen99@gmail.com"
 
