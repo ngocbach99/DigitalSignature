@@ -1,5 +1,5 @@
 
-Trước khi bắt đầu ta cần tạo chứng chỉ số cho riêng mình.
+<h3> Trước khi bắt đầu ta cần tạo chứng chỉ số cho riêng mình. </h3>
 
 <h4> 1. Tạo CA's private key và Chứng chỉ tự kí </h4>
 openssl req -x509 -newkey rsa:4096 -days 365 -nodes -keyout ca-key.pem -out ca-cert.pem -subj "/C=VN/ST=Hanoi/L=Hanoi/O=PTIT/OU=IT/CN=*.myca.com/emailAddress=ngocbachnguyen99@gmail.com"
@@ -13,10 +13,7 @@ openssl req -newkey rsa:4096 -nodes -keyout server-key.pem -out server-req.pem -
 <h4> 3. Sử dụng CA's private key để kí web server's CSR và trả về chứng chỉ đã kí.</h4>
 openssl x509 -req -in server-req.pem -days 60 -CA ca-cert.pem -CAkey ca-key.pem -CAcreateserial -out server-cert.pem
 
--> Kiểm tra chứng chỉ
-openssl x509 -in server-cert.pem -noout -text
-
--> Xác thực chứng chỉ
+<h4> 4. Xác thực chứng chỉ <h4>
 openssl verify -CAfile ca-cert.pem server-cert.pem
 
 ------------------------------------------------------------------------------
